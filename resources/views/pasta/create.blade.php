@@ -20,6 +20,14 @@
         <input type="text" name="name" id="name" class="form-control col-6">
     </div>
     <div class="form-group">
+        <label for="syntax">Язык</label>
+        <select name="syntax" id="syntax" class="form-control col-6">
+            @foreach($syntax as $key => $syn)
+                <option value="{{ $key }}">{{ $syn }}</option>
+            @endforeach
+        </select>
+    </div>
+    <div class="form-group">
         <label for="body">Содержание пасты</label>
         <textarea class="form-control col-6" name="body" id="body" rows="5"></textarea>
     </div>

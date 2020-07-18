@@ -19,7 +19,7 @@ class CreatePastasTable extends Migration
             $table->dateTime('create_date');
             $table->dateTime('end_date')->nullable();
             $table->string('name');
-            $table->string('body');
+            $table->text('body');
             $table->integer('status');
             $table->string('hash');
 

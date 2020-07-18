@@ -28,6 +28,7 @@ class PastaPost extends FormRequest
             'body' => 'required',
             'status' => 'required|integer',
             'user_id' => 'required|integer',
+            'syntax' => 'required',
         ];
     }
 }

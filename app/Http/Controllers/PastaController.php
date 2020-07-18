@@ -30,7 +30,8 @@ class PastaController extends BaseController
         if(Auth::check())
         {
             return $this->responseView('pasta.create', ['statuses' => Pasta::getStatuses(),
-                                                    'intervals' => Pasta::getTimeInterval()]);
+                                                    'intervals' => Pasta::getTimeInterval(),
+                                                    'syntax' => Pasta::SYNTAX_TYPE]);
         }
 
         return route('login');

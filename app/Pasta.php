@@ -18,7 +18,13 @@ class Pasta extends Model
     const TIME_1MONTH = 6;
     const TIME_ALL = 7;
 
-    protected $fillable = ['name', 'body', 'status', 'user_id'];
+    public const SYNTAX_TYPE = [
+        'php' => 'PHP',
+        'javascript' => 'JS',
+        'htmlmixed' => 'HTML',
+    ];
+
+    protected $fillable = ['name', 'body', 'status', 'user_id', 'syntax'];
 
     public static function getStatuses()
     {
